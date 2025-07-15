@@ -13,7 +13,7 @@ IMAGES_PER_PAGE = 12
 # -------------- Ensure Dataset Exists (once) --------------
 @st.cache_resource
 def initialize_data():
-    #getData()
+    getData()
     return VectorStore(), RecommendationEngine()
 
 vector_store, recommendation_engine = initialize_data()
